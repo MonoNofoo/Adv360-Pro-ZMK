@@ -21,6 +21,7 @@
 / {
   behaviors {
     #include "macros.dtsi"
+    #include "version.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -83,7 +84,7 @@
  &kp ESCAPE      &kp Q          &kp W     &kp E      &kp R   &kp T              &trans                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
     &kp TAB      &kp A          &kp S     &kp D      &kp F   &kp G              &tog 5  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
   &kp LSHFT      &kp Z          &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-      &mo 2  &kp GRAVE  &kp LA(GRAVE)  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+      &mo 2  &kp GRAVE  &macro_quotes  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
